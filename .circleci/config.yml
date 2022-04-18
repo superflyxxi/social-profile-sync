@@ -300,6 +300,7 @@ workflows:
           context: default
           requires:
             - build-js
+            - build-js-common
       - docker/hadolint:
           name: validate-dockerfiles
           context: default
