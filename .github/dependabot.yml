@@ -1,0 +1,48 @@
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "fix(ci): "
+      prefix-development: "fix(ci): "
+    reviewers:
+      - superflyxxi
+  - package-ecosystem: "npm"
+    directory: "/common"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "fix(common): "
+      prefix-development: "fix(deps-dev): "
+    reviewers:
+      - superflyxxi
+  - package-ecosystem: "docker"
+    directory: "/common"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "fix(common): "
+      prefix-development: "fix(deps-dev): "
+    reviewers:
+      - superflyxxi
+  - package-ecosystem: "npm"
+    directory: "/template"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "fix(template): "
+      prefix-development: "fix(deps-dev): "
+    reviewers:
+      - superflyxxi
+  - package-ecosystem: "docker"
+    directory: "/template"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "fix(template): "
+      prefix-development: "fix(deps-dev): "
+    reviewers:
+      - superflyxxi
